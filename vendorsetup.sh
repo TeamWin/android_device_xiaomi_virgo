@@ -8,3 +8,5 @@ applyminotepatch() {
 export WITH_SU=true
 
 export TMPDIR=/home/guaiyihu/android/laos13/tmp
+
+echo "** Make sure you have run after repo sync: applyminotepatch"
