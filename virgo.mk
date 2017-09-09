@@ -53,7 +53,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8974 \
     libxml2 \
-    Snap
+    Snap \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -75,6 +77,10 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl
+
+#USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
 
 # WiFi
 PRODUCT_COPY_FILES += \
@@ -164,6 +170,7 @@ PRODUCT_COPY_FILES += \
 
 # Media & Audio
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
     libc2dcolorconvert \
     libdivxdrmdecrypt \
     libOmxAacEnc \
@@ -201,6 +208,10 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl
 
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl
+
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
@@ -219,6 +230,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     memtrack.msm8974 \
     liboverlay \
+    libgenlock \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl \
@@ -240,7 +252,9 @@ PRODUCT_PACKAGES += \
 
 # Sensor
 PRODUCT_PACKAGES += \
+    context_hub.default \
     android.hardware.sensors@1.0-impl \
+    android.hardware.contexthub@1.0-impl \
     sensors.msm8974
 
 # Misc dependency packages
@@ -249,6 +263,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libnl_2 \
     libbson
+
+# Thermal HAL
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
 
 # ANT+
 PRODUCT_PACKAGES += \
