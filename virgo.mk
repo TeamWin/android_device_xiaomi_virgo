@@ -208,10 +208,6 @@ PRODUCT_PACKAGES += \
     libbt-vendor \
     android.hardware.bluetooth@1.0-impl
 
-# Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl
-
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
